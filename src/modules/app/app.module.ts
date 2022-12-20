@@ -8,7 +8,7 @@ import {ConfigModule} from '@nestjs/config';
 
 @Module({
     imports: [
-        MongooseModule.forRoot('mongodb://root:root@localhost:27017/', {
+        MongooseModule.forRoot('mongodb://root:root@mongo:27017/', {
             dbName: 'datingApp'
         }),
         ConfigModule.forRoot(),
